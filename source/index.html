@@ -1,12 +1,115 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="#" alt="Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Седона-городок в Аризоне</h1>
+    <section class="acquaintance">
+      <p class="acquaintance__sedona">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+    </section>
+    <section class="description">
+      <div class="description__wrapper">
+        <h2 class="visually-hidden">Описание преимуществ</h2>
+        <p class="description__intro">Расмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <div class="reasons">
+          <div class="reason reason__town">
+            <h2 class="visually-hidden">Причины посещения городка</h2>
+            <h3 class="reason__name">Настоящий городок</h3>
+            <p class="reason__number">&#8211; &#8470;1 &#8211;</p>
+            <p class="reason__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+            <div class="reasons-list">
+              <div class="reason-list__item">
+                <b class="reason-list__item-title">Жильё</b>
+                <p class="reason-list__item-description">Рекомендуем пожить в настоящем мотеле, всёскак в кино!</p>
+              </div>
+              <div class="reason-list__item">
+                <b class="reason-list__item-title">Сувениры</b>
+                <p class="reason-list__item-description">Не только китайского, но и местного производства</p>
+              </div>
+              <div class="reason-list__item">
+                <b class="reason-list__item-title">Еда</b>
+                <p class="reason-list__item-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
+              </div>
+            </div>
+          </div>
+          <div class="reason reason__bridge">
+            <h3 class="reason__name">Там есть мост дьявола</h3>
+            <p class="reason__number">&#8211; &#8470;2 &#8211;</p>
+            <p class="reason__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
+          <div class="reason">
+            <h3 class="reason__name">Небольшая площадь</h3>
+            <p class="reason__number">&#8211; &#8470;3 &#8211;</p>
+            <p class="reason__description">Все интересные места находятся очень близко</p>
+          </div>
+          <div class="reason">
+            <h3 class="reason__name">Красивая дорога</h3>
+            <p class="reason__number">&#8211; &#8470;4 &#8211;</p>
+            <p class="reason__description">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+          </div>
+          <div class="reason">
+            <h3 class="reason__name">Мало туристов</h3>
+            <p class="reason__number">&#8211; &#8470;5 &#8211;</p>
+            <p class="reason__description">Большинство едeт в Гранд Каньон и толпится там</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__link" href="#">#VisitSedona</a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
+              YouTube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__image" src="#" alt="HTML Academy">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
