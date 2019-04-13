@@ -1,4 +1,12 @@
+.acquaintance {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .acquaintance__background {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 320px;
   height: 389px;
 
@@ -9,7 +17,7 @@
 .acquaintance__intro-image {
   z-index: 10;
 
-  width: 281px;
+  width: auto;
   height: 214px;
 
   background: url("/img/text-sedona-index.svg");
@@ -19,7 +27,7 @@
 .acquaintance__triangle {
   z-index: 10;
 
-  width: 320px;
+  width: auto;
   height: 26px;
 
   background: url("/img/bg-intro-triangle-mobile.svg");
@@ -35,4 +43,42 @@
 .acquaintance__intro {
   line-height: 26px;
   color: #333333;
+}
+
+@media (min-width: @tablet-width) {
+  .acquaintance {
+    width: 768px;
+  }
+
+  .acquaintance__background {
+    width: auto;
+
+    background: url("/img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .acquaintance__triangle {
+    height: 57px;
+
+    background: url("/img/bg-intro-triangle-tablet.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .acquaintance {
+    width: 1200px;
+  }
+
+  .acquaintance__background {
+    width: auto;
+
+    background: url("/img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .acquaintance__triangle {
+    background: url("/img/bg-intro-triangle-desktop.svg");
+    background-repeat: no-repeat;
+  }
 }

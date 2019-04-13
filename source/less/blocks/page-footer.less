@@ -1,3 +1,10 @@
+.page-footer {
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 .page-footer__link {
   font-size: 21px;
   font-weight: 700;
@@ -6,4 +13,22 @@
   list-style: none;
 
   color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: 768px;
+  }
+
+  .page-footer__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 1200px;
+  }
 }
