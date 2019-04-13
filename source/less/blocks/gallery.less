@@ -1,3 +1,36 @@
+.gallery {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.gallery__background {
+  width: 320px;
+  height: 158px;
+
+  background: url("/img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.gallery__intro-image {
+  z-index: 10;
+
+  width: auto;
+  height: 39px;
+
+  background: url("/img/text-sedona-index.svg");
+  background-repeat: no-repeat;
+}
+
+.gallery__triangle {
+  z-index: 10;
+
+  width: auto;
+  height: 26px;
+
+  background: url("/img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+}
+
 .gallery__sedona {
   font-size: 18px;
   font-weight: 700;
@@ -8,6 +41,30 @@
   line-height: 24px;
 
   color: #333333;
+}
+
+.gallery__photo-sunset {
+  width: 280px;
+  height: 280px;
+  background: url("/img/photo-sunset-mobile@1x.jpg");
+}
+
+.gallery__photo-cactus {
+  width: 280px;
+  height: 280px;
+  background: url("/img/photo-cactus-mobile@1x.jpg");
+}
+
+.gallery__photo-roads {
+  width: 280px;
+  height: 280px;
+  background: url("/img/photo-roads-mobile@1x.jpg");
+}
+
+.gallery__photo-bridge {
+  width: 280px;
+  height: 280px;
+  background: url("/img/photo-bridge-mobile@1x.jpg");
 }
 
 .gallery__photo-item {
@@ -43,4 +100,95 @@
   background-image: url("/img/icon-like.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery {
+    width: 768px;
+  }
+
+  .gallery__background {
+    width: auto;
+
+    background: url("/img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .gallery__triangle {
+    height: 57px;
+
+    background: url("/img/bg-intro-triangle-tablet.svg");
+    background-repeat: no-repeat;
+  }
+
+  .gallery__images {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery__photo-sunset {
+    width: 648px;
+    height: 400px;
+    background: url("/img/photo-sunset-tablet@1x.jpg");
+  }
+
+  .gallery__photo-cactus {
+    width: 324px;
+    height: 267px;
+    background: url("/img/photo-cactus-tablet@1x.jpg");
+  }
+
+  .gallery__photo-roads {
+    width: 324px;
+    height: 267px;
+    background: url("/img/photo-roads-tablet@1x.jpg");
+  }
+
+  .gallery__photo-bridge {
+    width: 324px;
+    height: 267px;
+    background: url("/img/photo-bridge-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery {
+    width: 1200px;
+  }
+
+  .gallery__background {
+    width: auto;
+
+    background: url("/img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .gallery__triangle {
+    background: url("/img/bg-intro-triangle-desktop.svg");
+    background-repeat: no-repeat;
+  }
+
+  .gallery__photo-sunset {
+    width: 1200px;
+    height: 400px;
+    background: url("/img/photo-sunset-desktop@1x.jpg");
+  }
+
+  .gallery__photo-cactus {
+    width: 400px;
+    height: 267px;
+    background: url("/img/photo-cactus-desktop@1x.jpg");
+  }
+
+  .gallery__photo-roads {
+    width: 400px;
+    height: 267px;
+    background: url("/img/photo-roads-desktop@1x.jpg");
+  }
+
+  .gallery__photo-bridge {
+    width: 400px;
+    height: 267px;
+    background: url("/img/photo-bridge-desktop@1x.jpg");
+  }
 }

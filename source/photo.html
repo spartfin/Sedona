@@ -4,16 +4,25 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle button" type="button"><span class="visually-hidden">Открыть меню</span><svg
+          version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982"
+          enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+          <g>
+            <rect width="22.928" height="3.964" />
+            <rect y="9.009" width="22.928" height="3.964" />
+            <rect y="18.018" width="22.928" height="3.964" />
+          </g>
+        </svg></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -34,6 +43,9 @@
   </header>
   <main>
     <section class="gallery">
+      <div class="gallery__background"></div>
+      <div class="gallery__intro-image"></div>
+      <div class="gallery__triangle"></div>
       <h1 class="gallery__sedona">Фото и видео</h1>
       <p class="gallery__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
         политике и экономике
@@ -41,25 +53,26 @@
       <div class="gallery__images">
         <h2 class="visually-hidden">Галерея Фотографий</h2>
         <div class="gallery__photo">
-          <img class="gallery__the-photo" src="/img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="">
+          <div class="gallery__photo-sunset"></div>
           <h3 class="gallery__photo-item">Народные просторы</h3>
           <p class="gallery__photo-author">Автор фото: Борис</p>
           <span class="gallery__like">1350</span>
         </div>
         <div class="gallery__photo">
-          <img class="gallery__the-photo" src="/img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="">
+          <div class="gallery__photo-cactus"></div>
           <h3 class="gallery__photo-item">Местная растительность</h3>
           <p class="gallery__photo-author">Автор фото: Сергей</p>
           <span class="gallery__like">143</span>
         </div>
         <div class="gallery__photo">
-          <img class="gallery__the-photo" src="/img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="">
+          <div class="gallery__photo-roads">
+          </div>
           <h3 class="gallery__photo-item">Дорога на север</h3>
           <p class="gallery__photo-author">Автор фото: Пётр</p>
           <span class="gallery__like">96</span>
         </div>
         <div class="gallery__photo">
-          <img class="gallery__the-photo" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="">
+          <div class="gallery__photo-bridge"></div>
           <h3 class="gallery__photo-item">Мост дьявола</h3>
           <p class="gallery__photo-author">Автор фото: Антон</p>
           <span class="gallery__like">254</span>

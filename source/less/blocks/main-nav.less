@@ -1,7 +1,42 @@
+.main-nav {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 320px;
+  margin: 0 auto;
+}
+
 .main-nav__toggle {
   width: 23px;
   height: 21px;
+  margin-left: auto;
+  margin-right: 18px;
+  margin-top: 20px;
 
-  background: url("/less/blocks/main-nav/icon-menu.svg");
+  background: url("/img/icon-menu.svg");
   background-repeat: no-repeat;
+  fill: #81b3d2;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
