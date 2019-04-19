@@ -6,6 +6,7 @@
 }
 
 .main-nav__toggle {
+  position: relative;
   width: 23px;
   height: 21px;
   margin-left: auto;
@@ -13,8 +14,16 @@
   margin-top: 20px;
 
   background: url("/img/icon-menu.svg");
-  background-repeat: no-repeat;
   fill: #81b3d2;
+
+  &::before {
+    position: absolute;
+    width: 22px;
+    height: 23px;
+    content: "";
+    background: url("/img/icon-cross.svg");
+    top: -230px;
+  }
 }
 
 @media (min-width: @tablet-width) {

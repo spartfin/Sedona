@@ -1,50 +1,100 @@
+.reasons-list {
+  margin-top: 22px;
+  margin-bottom: 24px;
+}
+
 .reasons-list__item-title {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  padding-top: 13px;
+  padding-bottom: 15px;
 }
 
 .reasons-list__item {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
   color: #333333;
   background: #ffffff;
 }
 
-.reasons-list__image-house {
+.reasons-list__item-description {
+  padding-left: 67px;
+  padding-right: 35px;
+  padding-bottom: 18px;
+}
+
+.reasons-list__image-house svg {
   width: 37px;
   height: 36px;
-  background: url("/img/icon-house.svg");
 }
 
-.reasons-list__image-burger {
-  width: 32px;
-  height: 38px;
-  background: url("/img/icon-burger.svg");
-}
-
-.reasons-list__image-gift {
+.reasons-list__image-burger svg {
   width: 40px;
   height: 35px;
-  background: url("/img/icon-gift.svg");
+}
+
+.reasons-list__image-gift svg {
+  width: 32px;
+  height: 38px;
+}
+
+.reasons-list__image {
+  padding-left: 21px;
+  padding-right: 12px;
+  background-size: cover;
+  fill: #81b3d2;
 }
 
 @media (min-width: @tablet-width) {
   .reasons-list {
-    width: 768px;
-    height: 330px;
     display: flex;
+    margin: 0;
+    width: 768px;
+    margin-top: 60px;
+    margin-bottom: 66px;
   }
 
-  .reasons-list__image-house {
+  .reasons-list__item {
+    flex-direction: column;
+    text-align: center;
+
+    &:nth-child(2) {
+      order: 2;
+    }
+  }
+
+  .reasons-list__image,
+  .reasons-list__item-title,
+  .reasons-list__item-description {
+    padding: 0;
+  }
+
+  .reasons-list__image {
+    padding-bottom: 30px;
+  }
+
+  .reasons-list__item-title {
+    padding-bottom: 26px;
+  }
+
+  .reasons-list__item-description {
+    padding: 0 35px;
+  }
+
+
+  .reasons-list__image-house svg {
     width: 75px;
     height: 72px;
   }
 
-  .reasons-list__image-burger {
+  .reasons-list__image-burger svg {
     width: 77px;
     height: 68px;
   }
 
-  .reasons-list__image-gift {
+  .reasons-list__image-gift svg {
     width: 64px;
     height: 75px;
   }
@@ -53,7 +103,10 @@
 @media (min-width: @desktop-width) {
   .reasons-list {
     width: 1200px;
-    height: 330px;
-    display: flex;
+    margin-bottom: 85px;
+  }
+
+  .reasons-list__item-description {
+    padding: 0 68px;
   }
 }
