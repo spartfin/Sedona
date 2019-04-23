@@ -5,10 +5,17 @@
   margin: 0 auto;
 }
 
+.page-footer__wrapper {
+  margin-top: 31px;
+  margin-bottom: 23px;
+}
+
 .page-footer__link {
+  display: block;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+  padding-left: 10px;
 
   list-style: none;
 
@@ -23,6 +30,7 @@
   .page-footer__wrapper {
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-around;
   }
 }
@@ -30,5 +38,18 @@
 @media (min-width: @desktop-width) {
   .page-footer {
     width: 1200px;
+  }
+
+  .page-footer__wrapper {
+    justify-content: flex-start;
+  }
+
+  .page-footer__link {
+    padding-left: 119px;
+  }
+
+  .page-footer__social {
+    padding-left: 269px;
+    padding-right: 260px;
   }
 }

@@ -1,4 +1,35 @@
+.copyright {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding-left: 11px;
+}
+
 .copyright__text {
   font-weight: 400;
   line-height: 26px;
+  padding-right: 11px;
+}
+
+.copyright__link {
+  width: 40px;
+  height: 40px;
+
+  &:hover {
+    path {
+      fill: #81b3d2;
+    }
+  }
+
+  &:active {
+    path {
+      fill: rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright__text {
+    padding-right: 5px;
+  }
 }

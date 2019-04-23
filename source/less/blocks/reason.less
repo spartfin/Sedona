@@ -1,23 +1,57 @@
 .reason {
+  position: relative;
+  width: auto;
+  height: 167px;
   color: #333333;
   background: #eeeeee;
+  padding: 0 35px;
+}
+
+.reason-border {
+  &::before {
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    content: "";
+    right: 20px;
+
+    background-color: #000000;
+    opacity: 0.1;
+  }
 }
 
 .reason__name {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  text-align: center;
+  padding-top: 29px;
+  padding-bottom: 9px;
+}
+
+.reason__town .reason__name,
+.reason__bridge .reason__name {
+  padding-top: 42px;
+}
+
+.reason__number {
+  padding-bottom: 16px;
 }
 
 .reason__description,
 .reason__number {
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
 }
 
 .reason__town,
 .reason__bridge {
+  height: 191px;
   color: #ffffff;
   background: #81b3d2;
+  padding-left: 28px;
+  padding-right: 28px;
 }
 
 .reason__image {
@@ -35,8 +69,31 @@
 
 @media (min-width: @tablet-width) {
   .reason {
+    padding: 0;
     width: 256px;
     height: 256px;
+  }
+
+  .reason-border {
+    &::before {
+      display: none;
+    }
+  }
+
+  .reason__name {
+    font-size: 21px;
+    padding: 0 52px;
+    padding-right: 53px;
+    padding-top: 45px;
+    padding-bottom: 17px;
+  }
+
+  .reason__number {
+    padding-bottom: 19px;
+  }
+
+  .reason__description {
+    padding: 0 49px;
   }
 
   .reason__image {
@@ -51,17 +108,52 @@
   .reason__image-bridge {
     background: url("/img/main-bridge-tablet@1x.jpg");
   }
+
+  .reason__bridge-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .reason {
-    width: 400px;
-    height: 256px;
-  }
-
   .reason__image {
     width: 800px;
     height: 256px;
+  }
+
+  .reason__town .reason__name,
+  .reason__bridge .reason__name {
+    padding-top: 52px;
+  }
+
+  .reason__name {
+    padding: 0 124px;
+    padding-right: 125px;
+    padding-top: 45px;
+    padding-bottom: 13px;
+  }
+
+  .reason__number {
+    padding-bottom: 22px;
+  }
+
+  .reason__description {
+    padding: 0 65px;
+  }
+
+  .reason__bridge p {
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+
+  .reason {
+    width: 400px;
+    height: 256px;
+
+    &:nth-child(6) p {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
   }
 
   .reason__image-city {

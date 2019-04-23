@@ -4,43 +4,66 @@
 }
 
 .gallery__background {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 320px;
   height: 158px;
 
   background: url("/img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 .gallery__intro-image {
   z-index: 10;
 
-  width: auto;
+  width: 229px;
   height: 39px;
+  margin: 0 auto;
+  margin-top: 52px;
 
-  background: url("/img/text-sedona-index.svg");
+  background: url("/img/text-sedona.svg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .gallery__triangle {
   z-index: 10;
 
   width: auto;
-  height: 26px;
+  height: 25px;
 
   background: url("/img/bg-intro-triangle-mobile.svg");
-  background-repeat: no-repeat;
 }
 
 .gallery__sedona {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  text-align: center;
+  padding: 0 30px;
+  padding-top: 39px;
 }
 
 .gallery__description {
+  font-size: 14px;
   line-height: 24px;
-
+  padding: 0 23px;
+  padding-top: 25px;
+  padding-bottom: 27px;
+  text-align: center;
   color: #333333;
+}
+
+.gallery__images {
+  padding: 0 20px;
+}
+
+.gallery__photo {
+  border-top: 1px #eeeeee solid;
+  padding-top: 22px;
+  margin-bottom: 14px;
 }
 
 .gallery__photo-sunset {
@@ -71,10 +94,13 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
+  padding-top: 15px;
 }
 
 .gallery__photo-author {
+  font-size: 14px;
   line-height: 24px;
+  padding-bottom: 11px;
 
   text-transform: none;
 
@@ -82,24 +108,23 @@
 }
 
 .gallery__like {
+  position: relative;
   font-weight: 700;
   line-height: 24px;
+  padding-left: 37px;
 
-  position: relative;
-}
+  &::before {
+    position: absolute;
 
-.gallery__like::before {
-  position: absolute;
-
-  width: 23px;
-  height: 21px;
-
-  content: "";
-
-  opacity: 0.3;
-  background-image: url("/img/icon-like.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+    width: 23px;
+    height: 21px;
+    bottom: 2px;
+    left: 0;
+    content: "";
+    background-image: url("/img/icon-like.svg");
+    opacity: 0.3;
+    background-position: 1px 0;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -109,21 +134,85 @@
 
   .gallery__background {
     width: auto;
+    height: 290px;
 
     background: url("/img/bg-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .gallery__intro-image {
+    width: 460px;
+    height: 80px;
+    margin-top: 94px;
   }
 
   .gallery__triangle {
-    height: 57px;
+    height: 56px;
 
     background: url("/img/bg-intro-triangle-tablet.svg");
-    background-repeat: no-repeat;
+  }
+
+  .gallery__sedona {
+    font-size: 30px;
+    padding-top: 76px;
+  }
+
+  .gallery__description {
+    padding-right: 165px;
+    padding-left: 165px;
+    padding-bottom: 70px;
+    padding-top: 32px;
+  }
+
+  .gallery__photo {
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    &:nth-child(2) span {
+      padding-right: 23px;
+    }
+
+    &:nth-child(4) span {
+      padding-right: 37px;
+    }
   }
 
   .gallery__images {
     display: flex;
     flex-wrap: wrap;
+    padding: 0 60px;
+  }
+
+  .gallery__images-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #f2f2f2;
+  }
+
+  .gallery__photo-wrapper {
+    padding-top: 14px;
+    padding-left: 20px;
+  }
+
+  .gallery__photo-item {
+    padding: 0;
+  }
+
+  .gallery__photo-author {
+    padding: 0;
+  }
+
+  .gallery__like {
+    padding: 0;
+    padding-right: 30px;
+    padding-left: 35px;
+    padding-top: 28px;
+
+    &::before {
+      top: 29px;
+    }
   }
 
   .gallery__photo-sunset {
@@ -158,14 +247,44 @@
 
   .gallery__background {
     width: auto;
+    height: 300px;
 
     background: url("/img/bg-back-desktop@1x.jpg");
-    background-repeat: no-repeat;
   }
 
   .gallery__triangle {
     background: url("/img/bg-intro-triangle-desktop.svg");
-    background-repeat: no-repeat;
+  }
+
+  .gallery__sedona {
+    padding-top: 113px;
+  }
+
+  .gallery__description {
+    padding-right: 380px;
+    padding-left: 380px;
+  }
+
+  .gallery__images {
+    padding: 0;
+    color: #ffffff;
+  }
+
+  .gallery__images-wrapper {
+    height: 80px;
+    margin-top: -80px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .gallery__photo-author {
+    color: #ffffff;
+  }
+
+  .gallery__like {
+    &::before {
+      background-image: url("/img/icon-like-white.svg");
+      opacity: 1;
+    }
   }
 
   .gallery__photo-sunset {

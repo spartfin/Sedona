@@ -1,17 +1,44 @@
 .social__list {
   list-style: none;
   display: flex;
+  padding-top: 39px;
+  padding-bottom: 38px;
 }
 
 .social__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 46px;
   height: 48px;
-
-  text-align: center;
+  margin-right: 6px;
 
   background-color: #81b3d2;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
 }
 
 .social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
   fill: #ffffff;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    padding: 0;
+  }
 }
