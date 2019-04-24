@@ -10,9 +10,14 @@
   width: 320px;
   height: 389px;
 
-  background: url("/img/bg-back-mobile@1x.jpg");
+  background-image: url("/img/bg-back-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("/img/bg-back-mobile@2x.jpg");
+    background-size: cover;
+  }
 }
 
 .acquaintance__intro-image {
@@ -71,7 +76,12 @@
     width: auto;
     height: 518px;
 
-    background: url("/img/bg-back-tablet@1x.jpg");
+    background-image: url("/img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("/img/bg-back-tablet@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .acquaintance__intro-image {
@@ -112,7 +122,12 @@
   .acquaintance__background {
     width: auto;
 
-    background: url("/img/bg-back-desktop@1x.jpg");
+    background-image: url("/img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("/img/bg-back-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .acquaintance__triangle {
