@@ -5,14 +5,16 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="/css/style.min.css" as="style">
+  <link rel="preload" href="/js/script.min.js" as="script">
+  <link rel="preload" href="/fonts/PTSans.woff2" as="font">
   <link href="css/style-min.css" rel="stylesheet">
 </head>
 
-<div style="display:none">
-  <include src="build/img/sprite.svg"></include>
-</div>
-
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
     </a>
@@ -119,8 +121,7 @@
                 srcset="img/photo-roads-desktop@1x.jpg, img/photo-roads-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
                 srcset="img/photo-roads-tablet@1x.jpg, img/photo-roads-tablet@2x.jpg 2x">
-              <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x"
-                alt="Фото путешествий">
+              <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Фото путешествий">
             </picture>
           </div>
           <div class="gallery__images-wrapper">
