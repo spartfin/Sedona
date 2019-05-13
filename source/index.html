@@ -5,16 +5,22 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="/fonts/PTSans.woff2" as="font">
+  <link rel="preload" href="/fonts/PTSans.woff" as="font">
   <link href="css/style-min.css" rel="stylesheet">
 </head>
 
-<div style="display:none">
-  <include src="build/img/sprite.svg"></include>
-</div>
-
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+        <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+      </picture>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle button" type="button">
@@ -44,25 +50,26 @@
   <main>
     <h1 class="visually-hidden">Седон-городок в Аризоне</h1>
     <section class="acquaintance">
+      <h2 class="visually-hidden">Знакомство</h2>
       <div class="acquaintance__background">
         <div class="acquaintance__intro-image"></div>
         <div class="acquaintance__triangle"></div>
       </div>
-      <p class="acquaintance__sedona">Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</p>
-      <p class="acquaintance__intro">Расмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      <p class="acquaintance__sedona">Седона &ndash; небольшой городок в Аризоне, зaслуживающий большего!</p>
+      <p class="acquaintance__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       <div class="acquaintance__triangle-bg"></div>
     </section>
     <section class="description">
       <div class="description__wrapper">
-        <div class="reasons">
+        <div class="reason">
           <h2 class="visually-hidden">Причины посещения городка</h2>
-          <div class="reason reason__town">
+          <div class="reason__item reason__item_town">
             <h2 class="visually-hidden">Причины посещения городка</h2>
             <h3 class="reason__name">Настоящий городок</h3>
             <p class="reason__number">&#8211; &#8470;1 &#8211;</p>
             <p class="reason__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-          <div class="reason__image reason__image-city"></div>
+          <div class="reason__image reason__image_city"></div>
           <div class="reasons-list">
             <div class="reasons-list__item">
               <div class="reasons-list__image reasons-list__image-house"></div>
@@ -72,33 +79,35 @@
             <div class="reasons-list__item">
               <div class="reasons-list__image reasons-list__image-gift"></div>
               <b class="reasons-list__item-title">Сувениры</b>
-              <p class="reasons-list__item-description">Нетолько китайского. Но&nbsp;и местного производства!</p>
+              <p class="reasons-list__item-description reasons-list__item-description-gift">Не только китайского,
+                но&nbsp;и местного производства!</p>
             </div>
             <div class="reasons-list__item">
               <div class="reasons-list__image reasons-list__image-burger"></div>
               <b class="reasons-list__item-title">Еда</b>
-              <p class="reasons-list__item-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
+              <p class="reasons-list__item-description">Всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь
+              </p>
             </div>
           </div>
           <div class="reason__bridge-wrapper">
-            <div class="reason reason__bridge">
+            <div class="reason__item reason__item_bridge">
               <h3 class="reason__name">Там есть мост дьявола</h3>
               <p class="reason__number">&#8211; &#8470;2 &#8211;</p>
               <p class="reason__description">Да, по нему можно пройти! Если вы осмелитесь,&nbsp;конечно</p>
             </div>
-            <div class="reason__image reason__image-bridge"></div>
+            <div class="reason__image reason__image_bridge"></div>
           </div>
-          <div class="reason">
+          <div class="reason__item">
             <h3 class="reason__name">Небольшая площадь</h3>
             <p class="reason__number">&#8211; &#8470;3 &#8211;</p>
             <p class="reason__description">Все интересные места находятся очень близко</p>
           </div>
-          <div class="reason reason-border">
+          <div class="reason__item reason__item_border">
             <h3 class="reason__name">Красивая дорога</h3>
             <p class="reason__number">&#8211; &#8470;4 &#8211;</p>
-            <p class="reason__description">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+            <p class="reason__description">Ехать в Седону из Лас-&nbsp;Вегаса совсем не&nbsp;скучно</p>
           </div>
-          <div class="reason reason-border">
+          <div class="reason__item reason__item_border">
             <h3 class="reason__name">Мало туристов</h3>
             <p class="reason__number">&#8211; &#8470;5 &#8211;</p>
             <p class="reason__description">Большинство едeт в Гранд Каньон и толпится там</p>
@@ -148,6 +157,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/picturefill.js"></script>
 </body>
 
 </html>

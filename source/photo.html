@@ -5,16 +5,22 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="/fonts/PTSans.woff2" as="font">
+  <link rel="preload" href="/fonts/PTSans.woff" as="font">
   <link href="css/style-min.css" rel="stylesheet">
 </head>
 
-<div style="display:none">
-  <include src="build/img/sprite.svg"></include>
-</div>
-
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+        <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+      </picture>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle button" type="button">
@@ -60,8 +66,7 @@
                 srcset="img/photo-sunset-desktop@1x.webp, img/photo-sunset-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/photo-sunset-tablet@1x.webp, img/photo-sunset-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp"
-                srcset="img/photo-sunset-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp, img/photo-sunset-mobile@2x.webp 2x">
 
               <source media="(min-width: 1200px)"
                 srcset="img/photo-sunset-desktop@1x.jpg, img/photo-sunset-desktop@2x.jpg 2x">
@@ -86,8 +91,7 @@
                 srcset="img/photo-cactus-desktop@1x.webp, img/photo-cactus-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/photo-cactus-tablet@1x.webp, img/photo-cactus-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp"
-                srcset="img/photo-cactus-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp, img/photo-cactus-mobile@2x.webp 2x">
 
               <source media="(min-width: 1200px)"
                 srcset="img/photo-cactus-desktop@1x.jpg, img/photo-cactus-desktop@2x.jpg 2x">
@@ -112,15 +116,13 @@
                 srcset="img/photo-roads-desktop@1x.webp, img/photo-roads-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/photo-roads-tablet@1x.webp, img/photo-roads-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp"
-                srcset="img/photo-roads-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp, img/photo-roads-mobile@2x.webp 2x">
 
               <source media="(min-width: 1200px)"
                 srcset="img/photo-roads-desktop@1x.jpg, img/photo-roads-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
                 srcset="img/photo-roads-tablet@1x.jpg, img/photo-roads-tablet@2x.jpg 2x">
-              <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x"
-                alt="Фото путешествий">
+              <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Фото путешествий">
             </picture>
           </div>
           <div class="gallery__images-wrapper">
@@ -138,8 +140,7 @@
                 srcset="img/photo-bridge-desktop@1x.webp, img/photo-bridge-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/photo-bridge-tablet@1x.webp, img/photo-bridge-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp"
-                srcset="img/photo-bridge-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp, img/photo-bridge-mobile@2x.webp 2x">
 
               <source media="(min-width: 1200px)"
                 srcset="img/photo-bridge-desktop@1x.jpg, img/photo-bridge-desktop@2x.jpg 2x">
@@ -201,6 +202,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/picturefill.js"></script>
 </body>
 
 </html>

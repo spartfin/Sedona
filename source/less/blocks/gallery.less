@@ -9,8 +9,8 @@
   justify-content: space-between;
   width: 320px;
   height: 158px;
-
-  background: url("../img/bg-back-mobile@1x.jpg");
+  background: #43769f;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
 
@@ -22,12 +22,10 @@
 
 .gallery__intro-image {
   z-index: 10;
-
   width: 229px;
   height: 39px;
   margin: 0 auto;
   margin-top: 52px;
-
   background: url("../img/text-sedona.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,10 +33,8 @@
 
 .gallery__triangle {
   z-index: 10;
-
   width: auto;
   height: 25px;
-
   background: url("../img/bg-intro-triangle-mobile.svg");
 }
 
@@ -55,7 +51,7 @@
   font-size: 14px;
   line-height: 24px;
   padding: 0 23px;
-  padding-top: 25px;
+  padding-top: 27px;
   padding-bottom: 27px;
   text-align: center;
   color: #333333;
@@ -69,6 +65,12 @@
   border-top: 1px #eeeeee solid;
   padding-top: 22px;
   margin-bottom: 14px;
+}
+
+.gallery__photo-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .gallery__photo-sunset {
@@ -102,9 +104,7 @@
   font-size: 14px;
   line-height: 24px;
   padding-bottom: 11px;
-
   text-transform: none;
-
   color: #333333;
 }
 
@@ -116,7 +116,6 @@
 
   &::before {
     position: absolute;
-
     width: 23px;
     height: 21px;
     bottom: 2px;
@@ -136,7 +135,6 @@
   .gallery__background {
     width: auto;
     height: 290px;
-
     background: url("../img/bg-back-tablet@1x.jpg");
     background-position: center bottom;
 
@@ -154,7 +152,6 @@
 
   .gallery__triangle {
     height: 56px;
-
     background: url("../img/bg-intro-triangle-tablet.svg");
   }
 
@@ -250,7 +247,6 @@
   .gallery__background {
     width: auto;
     height: 300px;
-
     background: url("../img/bg-back-desktop@1x.jpg");
     background-position: center bottom;
 
@@ -262,6 +258,10 @@
 
   .gallery__triangle {
     background: url("../img/bg-intro-triangle-desktop.svg");
+  }
+
+  .gallery__intro-image {
+    margin-top: 101px;
   }
 
   .gallery__sedona {
