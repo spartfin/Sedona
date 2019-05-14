@@ -1,11 +1,13 @@
 .page-footer {
-  width: 320px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 0 auto;
 }
 
 .page-footer__wrapper {
+  width: 150px;
+  margin: 0 auto;
   margin-top: 31px;
   margin-bottom: 23px;
 }
@@ -21,12 +23,8 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-footer {
-    width: 768px;
-  }
-
   .page-footer__wrapper {
-    width: 100%;
+    width: 768px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -39,12 +37,8 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer {
-    width: 1200px;
-  }
-
   .page-footer__wrapper {
-    width: 100%;
+    width: 1200px;
     display: flex;
     align-items: center;
     justify-content: start;
