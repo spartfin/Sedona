@@ -137,14 +137,17 @@
   }
 
   .video__volume {
+    justify-content: flex-start;
     width: 648px;
     height: 93px;
     margin-top: -93px;
     background: rgba(0, 0, 0, 0.6);
+    z-index: 5;
   }
 
   .video__slider {
     width: 389px;
+    margin-left: 93px;
 
     &::before {
       left: 112px;
@@ -181,6 +184,11 @@
 
   .video__subtitles {
     margin-left: 473px;
+    background-image: url("../img/icon-video-subtitles-white.svg");
+  }
+
+  .video__fullscreen {
+    background-image: url("../img/icon-video-fullscreen-white.svg");
   }
 }
 
@@ -193,5 +201,18 @@
 
   .video__description {
     padding-bottom: 76px;
+  }
+
+  .video__volume,
+  .video__settings {
+    width: 800px;
+  }
+
+  .video__slider {
+    width: 540px;
+  }
+
+  .video__subtitles {
+    margin-left: 624px;
   }
 }
