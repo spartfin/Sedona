@@ -84,10 +84,18 @@
           <fieldset class="review__form-contacts">
             <legend class="review__form-title">Контактная информация:</legend>
             <div class="review__wrapper">
-              <p class="review__form-item review__form-item_phone">
-                <label for="review__form-phone">Контактный телефон&#42;:</label>
-                <input id="review__form-phone" type="text" name="surname" placeholder="Введите телефон">
-              </p>
+              <div class="review__wrapper-phone">
+                <p class="review__form-item review__form-item_phone">
+                  <label for="review__form-phone">Контактный телефон&#42;:</label>
+                  <input id="review__form-phone" type="text" name="surname" placeholder="Введите телефон">
+                </p>
+              </div>
+              <div class="review__wrapper-phone_mod">
+                <p class="review__form-item">
+                  <label for="review__form-phone_mod">Телефон&#42;:</label>
+                  <input id="review__form-phone_mod" type="text" name="surname" placeholder="Введите телефон">
+                </p>
+              </div>
               <p class="review__form-item review__form-item_mail">
                 <label for="review__form-email">Электронная почта&#42;:</label>
                 <input id="review__form-email" type="text" name="patronymic" placeholder="Введите e-mail">
@@ -118,7 +126,7 @@
         <fieldset class="review__form-attractions">
           <legend class="review__form-title">Посещенные достопримечательности:</legend>
           <ul class="review__checkbox">
-            <li class="review__filter">
+            <li class="review__filter review__filter_mod">
               <input class="visually-hidden review__filter-input review__filter-checkbox" type="checkbox" name="bridge"
                 id="review__filter-bridge">
               <label for="review__filter-bridge">Мост Дьявола</label>
@@ -147,9 +155,9 @@
           </p>
         </fieldset>
         <div class="review__button-wrapper">
-          <button type="submit" class="review-button button">Отправить отзыв</button>
+          <button type="submit" class="review-button button"><span>Отправить отзыв</span></button>
           <p class="review__form-item">&#42; — обязательные поля</p>
-        </div>>
+        </div>
       </form>
     </section>
   </main>

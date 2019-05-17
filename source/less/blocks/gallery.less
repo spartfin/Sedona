@@ -164,7 +164,7 @@
     padding-right: 165px;
     padding-left: 165px;
     padding-bottom: 70px;
-    padding-top: 32px;
+    padding-top: 29px;
   }
 
   .gallery__photo {
@@ -281,7 +281,7 @@
   .gallery__images-wrapper {
     position: relative;
     height: 80px;
-    margin-top: -80px;
+    margin-top: -78px;
     background: rgba(0, 0, 0, 0.3);
   }
 
@@ -290,11 +290,21 @@
   }
 
   .gallery__like {
+    padding-top: 28px;
+    padding-right: 29px;
+    padding-left: 33px;
+
     &::before {
       background-image: url("../img/icon-like-white.svg");
       opacity: 1;
+      top: 26;
     }
   }
+
+  .gallery__photo-wrapper {
+    padding-top: 13px;
+  }
+
 
   .gallery__photo-sunset {
     width: 1200px;
@@ -314,5 +324,15 @@
   .gallery__photo-bridge {
     width: 400px;
     height: 267px;
+  }
+
+  .gallery__photo {
+    &:nth-child(2) span {
+      padding-right: 19px;
+    }
+
+    &:nth-child(4) span {
+      padding-right: 34px;
+    }
   }
 }

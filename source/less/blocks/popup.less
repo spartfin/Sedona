@@ -5,11 +5,15 @@
   text-align: center;
 }
 
-.popup__error {
+.popup__error,
+.popup__sent {
   display: none;
+}
+
+.popup__error {
   position: relative;
   z-index: 15;
-  bottom: 1120px;
+  bottom: 1004px;
   width: 320px;
   height: 280px;
   background-color: #ffffff;
@@ -19,7 +23,7 @@
 .popup__wrapper {
   display: flex;
   width: 320px;
-  height: 98px;
+  height: 99px;
   background-color: #f2f2f2;
   align-items: center;
   justify-content: center;
@@ -38,13 +42,13 @@
 }
 
 .popup__error .popup__title {
-  padding-top: 46px;
+  padding-top: 40px;
 }
 
 .popup__error .popup__item {
   padding: 0 55px;
-  padding-top: 42px;
-  padding-bottom: 29px;
+  padding-top: 27px;
+  padding-bottom: 23px;
 }
 
 .popup__button {
@@ -74,10 +78,9 @@
 }
 
 .popup__sent {
-  display: none;
   position: relative;
   z-index: 15;
-  bottom: 1030px;
+  bottom: 955px;
   width: 320px;
   height: 323px;
   background-color: #ffffff;
@@ -85,13 +88,13 @@
 }
 
 .popup__sent .popup__title {
-  padding-top: 49px;
+  padding-top: 41px;
 }
 
 .popup__sent .popup__item {
   padding: 0 52px;
   padding-top: 28px;
-  padding-bottom: 38px;
+  padding-bottom: 33px;
 }
 
 @media (min-width: @tablet-width) {
@@ -104,14 +107,15 @@
   }
 
   .popup__error {
-    bottom: 800px;
+    bottom: 714px;
     width: 400px;
     height: 347px;
     margin: 0 auto;
+    z-index: 20;
   }
 
   .popup__sent {
-    bottom: 1600px;
+    bottom: 1217px;
     width: 640px;
     height: 347px;
     margin: 0 auto;
@@ -119,21 +123,28 @@
 
   .popup__wrapper {
     width: 640px;
-    height: 146px;
+    height: 149px;
   }
 
   .popup__sent .popup__title {
-    padding-top: 55px;
+    padding-top: 59px;
   }
 
   .popup__sent .popup__item {
-    padding-bottom: 40px;
+    padding: 0 80px;
+    padding-top: 30px;
+    padding-bottom: 35px;
   }
 
   .popup__error .popup__title {
     line-height: 40px;
     padding: 0 80px;
-    padding-top: 64px;
+    padding-top: 57px;
+  }
+
+  .popup__error .popup__item {
+    padding-top: 23px;
+    padding-bottom: 32px;
   }
 
   .popup__error .popup__button {
@@ -147,10 +158,10 @@
 
 @media (min-width: @desktop-width) {
   .popup__error {
-    bottom: 680px;
+    bottom: 601px;
   }
 
   .popup__sent {
-    bottom: 1450px;
+    bottom: 1214px;
   }
 }
