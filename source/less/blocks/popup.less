@@ -1,0 +1,156 @@
+.popup {
+  width: 320px;
+  height: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.popup__error {
+  display: none;
+  position: relative;
+  z-index: 15;
+  bottom: 1120px;
+  width: 320px;
+  height: 280px;
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
+.popup__wrapper {
+  display: flex;
+  width: 320px;
+  height: 98px;
+  background-color: #f2f2f2;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.popup__item {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.popup__error .popup__title {
+  padding-top: 46px;
+}
+
+.popup__error .popup__item {
+  padding: 0 55px;
+  padding-top: 42px;
+  padding-bottom: 29px;
+}
+
+.popup__button {
+  height: 58px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  background-color: #81b3d2;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.popup__error .popup__button {
+  width: 180px;
+}
+
+.popup__sent .popup__button {
+  width: 280px;
+}
+
+.popup__sent {
+  display: none;
+  position: relative;
+  z-index: 15;
+  bottom: 1030px;
+  width: 320px;
+  height: 323px;
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
+.popup__sent .popup__title {
+  padding-top: 49px;
+}
+
+.popup__sent .popup__item {
+  padding: 0 52px;
+  padding-top: 28px;
+  padding-bottom: 38px;
+}
+
+@media (min-width: @tablet-width) {
+  .popup {
+    width: 768px;
+  }
+
+  .popup__title {
+    font-size: 30px;
+  }
+
+  .popup__error {
+    bottom: 800px;
+    width: 400px;
+    height: 347px;
+    margin: 0 auto;
+  }
+
+  .popup__sent {
+    bottom: 1600px;
+    width: 640px;
+    height: 347px;
+    margin: 0 auto;
+  }
+
+  .popup__wrapper {
+    width: 640px;
+    height: 146px;
+  }
+
+  .popup__sent .popup__title {
+    padding-top: 55px;
+  }
+
+  .popup__sent .popup__item {
+    padding-bottom: 40px;
+  }
+
+  .popup__error .popup__title {
+    line-height: 40px;
+    padding: 0 80px;
+    padding-top: 64px;
+  }
+
+  .popup__error .popup__button {
+    width: 272px;
+  }
+
+  .popup__sent .popup__button {
+    width: 458px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .popup__error {
+    bottom: 680px;
+  }
+
+  .popup__sent {
+    bottom: 1450px;
+  }
+}
