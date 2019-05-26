@@ -53,7 +53,6 @@
     <section class="form">
       <div class="form__background">
         <div class="form__intro-image"></div>
-        <div class="form__triangle"></div>
       </div>
       <h2 class="form__sedona">Оставьте свой отзыв</h2>
       <p class="form__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
@@ -69,11 +68,11 @@
             <div class="review__wrapper">
               <p class="review__form-item review__form-item_name">
                 <label for="review__form-name">Имя&#42;:</label>
-                <input id="review__form-name" type="text" name="name" placeholder="Петр">
+                <input required id="review__form-name" type="text" name="name" placeholder="Петр">
               </p>
               <p class="review__form-item">
                 <label for="review__form-surname">Фамилия&#42;:</label>
-                <input id="review__form-surname" type="text" name="surname" placeholder="Иванов">
+                <input required id="review__form-surname" type="text" name="surname" placeholder="Иванов">
               </p>
               <p class="review__form-item">
                 <label for="review__form-patronymic">Отчество:&#160;</label>
@@ -93,12 +92,12 @@
               <div class="review__wrapper-phone_mod">
                 <p class="review__form-item">
                   <label for="review__form-phone_mod">Телефон&#42;:</label>
-                  <input id="review__form-phone_mod" type="text" name="surname" placeholder="Введите телефон">
+                  <input required id="review__form-phone_mod" type="text" name="surname" placeholder="Введите телефон">
                 </p>
               </div>
               <p class="review__form-item review__form-item_mail">
                 <label for="review__form-email">Электронная почта&#42;:</label>
-                <input id="review__form-email" type="text" name="patronymic" placeholder="Введите e-mail">
+                <input required id="review__form-email" type="text" name="patronymic" placeholder="Введите e-mail">
               </p>
             </div>
           </fieldset>

@@ -1,6 +1,53 @@
 .reasons-list {
   margin-top: 22px;
-  margin-bottom: 24px;
+  margin-bottom: 29px;
+}
+
+.reasons-list__item-house {
+  position: relative;
+  padding-bottom: 6px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 37px;
+    height: 36px;
+    background: url("../img/icon-house.svg");
+    background-size: cover;
+    top: 6px;
+    left: 21px;
+  }
+}
+
+.reasons-list__item-burger {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 35px;
+    background: url("../img/icon-burger.svg");
+    background-size: cover;
+    top: 10px;
+    left: 18px;
+  }
+}
+
+.reasons-list__item-gift {
+  position: relative;
+  padding-bottom: 2px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 38px;
+    background: url("../img/icon-gift.svg");
+    background-size: cover;
+    top: 4px;
+    left: 24px;
+  }
 }
 
 .reasons-list__item-title {
@@ -9,6 +56,7 @@
   line-height: 26px;
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-left: 70px;
 }
 
 .reasons-list__item {
@@ -26,45 +74,14 @@
   padding-bottom: 12px;
 }
 
-.reasons-list__image-house {
-  width: 37px;
-  height: 36px;
-  background: url("../img/icon-house.svg");
-  margin-right: 12px;
-  margin-left: 22px;
-  margin-bottom: 8px;
-}
-
-.reasons-list__image-burger {
-  width: 40px;
-  height: 36px;
-  background: url("../img/icon-burger.svg");
-  margin-right: 11px;
-  margin-left: 19px;
-}
-
-.reasons-list__image-gift {
-  width: 32px;
-  height: 38px;
-  background: url("../img/icon-gift.svg");
-  margin-right: 13px;
-  margin-left: 25px;
-  margin-bottom: 8px;
-}
-
-.reasons-list__image {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 @media (min-width: @tablet-width) {
   .reasons-list {
     display: flex;
     justify-content: space-around;
     margin: 0;
     width: 768px;
-    margin-top: 62px;
-    margin-bottom: 65px;
+    margin-top: 156px;
+    margin-bottom: 64px;
   }
 
   .reasons-list__item {
@@ -78,7 +95,6 @@
     }
   }
 
-  .reasons-list__image,
   .reasons-list__item-title,
   .reasons-list__item-description {
     padding: 0;
@@ -89,40 +105,49 @@
     padding-bottom: 22px;
   }
 
-  .reasons-list__image {
-    margin: 0;
-  }
-
   .reasons-list__item-description {
     font-size: 14px;
     padding: 0;
     width: 166px;
   }
 
-  .reasons-list__image-house {
-    width: 73px;
-    height: 73px;
-    margin-bottom: 23px;
+  .reasons-list__item-house {
+    &::before {
+      width: 75px;
+      height: 74px;
+      top: -100px;
+      left: 43px;
+    }
   }
 
-  .reasons-list__image-burger {
-    width: 77px;
-    height: 70px;
-    margin-bottom: 25px;
+  .reasons-list__item-burger {
+    &::before {
+      width: 77px;
+      height: 68px;
+      top: -96px;
+      left: 43px;
+    }
   }
 
-  .reasons-list__image-gift {
-    width: 64px;
-    height: 76px;
-    margin-bottom: 25px;
-    margin-top: -5px;
+  .reasons-list__item-gift {
+    &::before {
+      width: 64px;
+      height: 75px;
+      top: -102px;
+      left: 49px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .reasons-list {
     width: 1200px;
-    margin-bottom: 80px;
+    margin-bottom: 79px;
+    margin-top: 155px;
+  }
+
+  .reasons-list__item {
+    min-width: 400px;
   }
 
   .reasons-list__item-description {
@@ -131,5 +156,23 @@
 
   .reasons-list .reasons-list__item-description-gift {
     width: 220px;
+  }
+
+  .reasons-list__item-house {
+    &::before {
+      left: 160px;
+    }
+  }
+
+  .reasons-list__item-burger {
+    &::before {
+      left: 160px;
+    }
+  }
+
+  .reasons-list__item-gift {
+    &::before {
+      left: 165px;
+    }
   }
 }

@@ -1,7 +1,6 @@
 .reason__item {
   position: relative;
   width: auto;
-  height: 167px;
   color: #333333;
   background: #eeeeee;
   padding: 0 35px;
@@ -44,9 +43,20 @@
   text-align: center;
 }
 
+.reason__description {
+  padding-bottom: 30px;
+}
+
+.reason__item_town .reason__description {
+  padding-bottom: 41px;
+}
+
+.reason__item_bridge .reason__description {
+  padding-bottom: 41px;
+}
+
 .reason__item_town,
 .reason__item_bridge {
-  height: 191px;
   color: #ffffff;
   background: #81b3d2;
   padding-left: 28px;
@@ -59,6 +69,7 @@
 }
 
 .reason__image_city {
+  background: #a28479;
   background-image: url("../img/main-city-mobile@1x.jpg");
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -68,6 +79,7 @@
 }
 
 .reason__image_bridge {
+  background: #e3aa99;
   background-image: url("../img/main-bridge-mobile@1x.jpg");
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -85,7 +97,6 @@
   .reason__item {
     padding: 0;
     width: 256px;
-    height: 256px;
   }
 
   .reason__item_border {
@@ -123,6 +134,7 @@
 
   .reason__description {
     padding: 0 45px;
+    padding-bottom: 47px;
   }
 
   .reason__image {
@@ -159,7 +171,7 @@
 @media (min-width: @desktop-width) {
   .reason__image {
     width: 800px;
-    height: 256px;
+    min-height: 256px;
   }
 
   .reason__item_town .reason__name {
@@ -187,6 +199,7 @@
 
   .reason__description {
     padding: 0 65px;
+    padding-bottom: 65px;
   }
 
   .reason__item_bridge p {
@@ -196,7 +209,6 @@
 
   .reason__item {
     width: 400px;
-    height: 256px;
 
     &:nth-child(6) p {
       padding-left: 40px;
@@ -205,7 +217,7 @@
   }
 
   .reason__image_city {
-    background: url("../img/main-city-desktop@1x.jpg");
+    background-image: url("../img/main-city-desktop@1x.jpg");
     background-position: center;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -215,7 +227,7 @@
   }
 
   .reason__image_bridge {
-    background: url("../img/main-bridge-desktop@1x.jpg");
+    background-image: url("../img/main-bridge-desktop@1x.jpg");
     background-position: center;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {

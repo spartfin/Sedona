@@ -1,17 +1,18 @@
 .page-header {
   display: flex;
   flex-direction: column-reverse;
+  margin-bottom: 20px;
 }
 
 .page-header__logo {
+  display: flex;
+  width: auto;
+  margin: 0 auto;
+  justify-content: center;
   margin-top: -39px;
-  margin-bottom: -28px;
 }
 
 .page-header__logo img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 102px;
   height: 83px;
 }
@@ -23,6 +24,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-header {
+    margin-bottom: 48px;
+  }
+
   .page-header__logo {
     margin-bottom: -40px;
   }
